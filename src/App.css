@@ -1,38 +1,169 @@
+p,
+h1,
+h2,
+h3 {
+  color: black;
+}
+
+
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #9BC54D;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.App header {
+  background-color: #5bc0eb;
+}
+
+header h2 {
+  padding: 0;
+  margin: 0;
+  line-height: 3;
+  font-size: 25px;
+}
+
+
+.App form {
+  width: 310px;
+  padding: 10px;
+  background-color: #E55934;
+  margin: 20px auto;
+  overflow: auto;
+  /* border-radius: 15px; */
+  box-shadow: 0 1px 8px black;
+
+
+
+}
+
+
+.App form h3 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.App form label {
+  width: 105px;
+  padding: 0 10px;
+  margin: 5px 0;
+  text-align: left;
+  float: left;
+  display: block;
+  clear: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App form input {
+  /* float: left; */
+  width: calc(90% - 10px);
+  height: 30px;
+  margin: 5px 0;
+  padding-left: 5px;
+  font-size: 18px;
+
+}
+
+.App form button {
+  clear: both;
+  margin: auto;
+  display: block;
+}
+
+
+.db-list {
+  width: fit-content;
+  max-width: 1630px;
+  margin: auto;
+  background-color: brown;
+  /* border: 5px solid #E55934; */
+  overflow: auto;
+  /* border-radius: 10px; */
+}
+
+.db-list .container {
+  /* width: fit-content;
+  margin: auto;
+  overflow: auto; */
+}
+
+.db-list .data-list {
+  width: calc(270px - 20px);
+  background-color: #E55934;
+  margin: 5px;
+  float: left;
+  padding: 5px;
+  /* border-radius: 10px; */
+
+}
+
+.data-list div:nth-of-type(1) {
+  height: 220px;
+  overflow: hidden;
+}
+
+.data-list div img {
+  width: 100%;
+  filter: blur(3px);
+
+}
+
+.data-list div:nth-of-type(n+2) {
+  position: relative;
+  padding: 10px 0 5px 0;
+}
+
+.data-list div:nth-of-type(n+2):hover .edit_button {
+  display: block;
+}
+
+.data-list div .edit_button {
+  position: absolute;
+  right: 0;
+  top: 13px;
+  padding: 5px 10px;
+  display: none;
+
+}
+
+.data-list h3 {
+  font-size: 15px;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+
+}
+
+.data-list h4 {
+
+  font-size: 10px;
+  line-height: 1;
+  margin: 0;
+
+
+}
+
+.data-list .delete_input {
+  /* display: block; */
+  clear: both;
+  margin: 10px auto;
+}
+
+.button_style {
+  background-color: brown;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button_style:hover {
+  background-color: #a76c6c;
+}
+
+.submit_button {
+  width: 90%;
+  padding: 10px 0;
+  margin: 5px auto;
+  font-size: 20px;
 }
